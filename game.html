@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+function dotafunc() {
+  document.getElementById("game1").style.backgroundColor = "lightblue";
+  document.getElementById("game2").style.backgroundColor = "white";
+  document.getElementById("game3").style.backgroundColor = "white";
+  document.getElementById("game4").style.backgroundColor = "white";
+  document.getElementById("display1").innerHTML = "Dota";
+
+}
+function pubgfunc() {
+  document.getElementById("game2").style.backgroundColor = "lightblue";
+  document.getElementById("game1").style.backgroundColor = "white";
+  document.getElementById("game3").style.backgroundColor = "white";
+  document.getElementById("game4").style.backgroundColor = "white";
+  document.getElementById("display1").innerHTML = "Pubg";
+}
+function csfunc() {
+  document.getElementById("game3").style.backgroundColor = "lightblue";
+  document.getElementById("game2").style.backgroundColor = "white";
+  document.getElementById("game1").style.backgroundColor = "white";
+  document.getElementById("game4").style.backgroundColor = "white";
+  document.getElementById("display1").innerHTML = "CS";
+}
+function todfunc() {
+  document.getElementById("game4").style.backgroundColor = "lightblue";
+  document.getElementById("game2").style.backgroundColor = "white";
+  document.getElementById("game3").style.backgroundColor = "white";
+  document.getElementById("game1").style.backgroundColor = "white";
+  document.getElementById("display1").innerHTML = "TOD";
+}
+function game_find(){
+  document.getElementById("display2").innerHTML = "Game finding";
+  document.getElementById("game_find").style.backgroundColor = "lightblue";
+  document.getElementById("hero_select").style.backgroundColor = "white";
+  document.getElementById("farm").style.backgroundColor = "white";
+  document.getElementById("fight").style.backgroundColor = "white";
+  document.getElementById("win1").style.backgroundColor = "white";
+}
+function hero_select(){
+  document.getElementById("display2").innerHTML = "Hero selection";
+  document.getElementById("game_find").style.backgroundColor = "white";
+  document.getElementById("hero_select").style.backgroundColor = "lightblue";
+  document.getElementById("farm").style.backgroundColor = "white";
+  document.getElementById("fight").style.backgroundColor = "white";
+  document.getElementById("win1").style.backgroundColor = "white";
+}
+function farm(){
+  document.getElementById("display2").innerHTML = "Farm";
+  document.getElementById("game_find").style.backgroundColor = "white";
+  document.getElementById("hero_select").style.backgroundColor = "white";
+  document.getElementById("farm").style.backgroundColor = "lightblue";
+  document.getElementById("fight").style.backgroundColor = "white";
+  document.getElementById("win1").style.backgroundColor = "white";
+}
+function fight(){
+  document.getElementById("display2").innerHTML = "Fight";
+  document.getElementById("game_find").style.backgroundColor = "white";
+  document.getElementById("hero_select").style.backgroundColor = "white";
+  document.getElementById("farm").style.backgroundColor = "white";
+  document.getElementById("fight").style.backgroundColor = "lightblue";
+  document.getElementById("win1").style.backgroundColor = "white";
+}
+function win1(){
+  document.getElementById("display2").innerHTML = "Win";
+  document.getElementById("game_find").style.backgroundColor = "white";
+  document.getElementById("hero_select").style.backgroundColor = "white";
+  document.getElementById("farm").style.backgroundColor = "white";
+  document.getElementById("fight").style.backgroundColor = "white";
+  document.getElementById("win1").style.backgroundColor = "lightblue";
+}
+
+function make_squad(){
+  document.getElementById("display2").innerHTML = "Make a squad";
+   document.getElementById("make_squad").style.backgroundColor = "lightblue";
+  document.getElementById("decide_place").style.backgroundColor = "white";
+  document.getElementById("get_gun").style.backgroundColor = "white";
+  document.getElementById("safe_region").style.backgroundColor = "white";
+  document.getElementById("chicken_dinner").style.backgroundColor = "white";
+}
+function decide_place(){
+  document.getElementById("display2").innerHTML = "Decide a place";
+  document.getElementById("make_squad").style.backgroundColor = "white";
+  document.getElementById("decide_place").style.backgroundColor = "lightblue";
+  document.getElementById("get_gun").style.backgroundColor = "white";
+  document.getElementById("safe_region").style.backgroundColor = "white";
+  document.getElementById("chicken_dinner").style.backgroundColor = "white";
+}
+function get_gun(){
+  document.getElementById("display2").innerHTML = "Get guns";
+  document.getElementById("make_squad").style.backgroundColor = "white";
+  document.getElementById("decide_place").style.backgroundColor = "white";
+  document.getElementById("get_gun").style.backgroundColor = "lightblue";
+  document.getElementById("safe_region").style.backgroundColor = "white";
+  document.getElementById("chicken_dinner").style.backgroundColor = "white";
+}
+function safe_region(){
+  document.getElementById("display2").innerHTML = "Safe in region";
+  document.getElementById("make_squad").style.backgroundColor = "white";
+  document.getElementById("decide_place").style.backgroundColor = "white";
+  document.getElementById("get_gun").style.backgroundColor = "white";
+  document.getElementById("safe_region").style.backgroundColor = "lightblue";
+  document.getElementById("chicken_dinner").style.backgroundColor = "white";
+}
+function chicken_dinner(){
+  document.getElementById("display2").innerHTML = "Chicken dinner";
+  document.getElementById("make_squad").style.backgroundColor = "white";
+  document.getElementById("decide_place").style.backgroundColor = "white";
+  document.getElementById("get_gun").style.backgroundColor = "white";
+  document.getElementById("safe_region").style.backgroundColor = "white";
+  document.getElementById("chicken_dinner").style.backgroundColor = "lightblue";
+}
+function select_team(){
+  document.getElementById("display2").innerHTML = "Select a team";
+  document.getElementById("select_team").style.backgroundColor = "lightblue";
+  document.getElementById("attack").style.backgroundColor = "white";
+  document.getElementById("win2").style.backgroundColor = "white";
+}
+function attack(){
+  document.getElementById("display2").innerHTML = "Attack";
+  document.getElementById("select_team").style.backgroundColor = "white";
+  document.getElementById("attack").style.backgroundColor = "lightblue";
+  document.getElementById("win2").style.backgroundColor = "white";
+
+}
+function win2(){
+  document.getElementById("display2").innerHTML = "Win";
+  document.getElementById("select_team").style.backgroundColor = "white";
+  document.getElementById("attack").style.backgroundColor = "white";
+  document.getElementById("win2").style.backgroundColor = "lightblue";
+
+}
+
+function chill(){
+  document.getElementById("display2").innerHTML = "Chill";
+  document.getElementById("chill").style.backgroundColor = "lightblue";
+  document.getElementById("repeat").style.backgroundColor = "white";
+}
+function repeat(){
+  document.getElementById("display2").innerHTML = "Repeat";
+  document.getElementById("chill").style.backgroundColor = "white";
+  document.getElementById("repeat").style.backgroundColor = "lightblue";
+}
+$(document).ready(function(){
+    
+    $("#game1").click(function(){
+       $("#steps").html(`<p>Steps</p>
+    <p onclick="game_find()" id="game_find">1.Game finding</p><br>
+    <p onclick="hero_select()" id="hero_select">2.Hero selection</p><br>
+    <p onclick="farm()" id="farm">3.Farm</p><br>
+    <p onclick="fight()" id="fight">4.Fight</p ><br>
+    <p onclick="win1()" id="win1">5.Win</p ><br>
+  `);
+    });
+     $("#game2").click(function(){
+       $("#steps").html(`<p>Steps</p>
+    <p onclick="make_squad()" id="make_squad">1.Make a squad</p><br>
+    <p onclick="decide_place()" id="decide_place">2.Decide a place</p><br>
+    <p onclick="get_gun()" id="get_gun">3.Get guns</p><br>
+    <p onclick="safe_region()" id="safe_region">4.Safe in region</p ><br>
+    <p onclick="chicken_dinner()" id="chicken_dinner">5.Chicken dinner</p ><br>
+  `);
+    });
+     $("#game3").click(function(){
+       $("#steps").html(`<p>Steps</p>
+    <p onclick="select_team()" id="select_team">1.Select a team</p><br>
+    <p onclick="attack()" id="attack">2.Attack</p><br>
+    <p onclick="win2()" id="win2">3.Win</p><br>   
+  `);
+    });
+     $("#game4").click(function(){
+       $("#steps").html(`<p>Steps</p>
+    <p onclick="chill()" id="chill">1.Chill</p><br>
+    <p onclick="repeat()" id="repeat">2.Repeat</p><br>
+    `);
+    });
+});
+</script>
+<style> 
+.rcorners2 {
+  margin-left: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  border: 2px solid black;
+  padding: 10px; 
+  width: 100px;
+  height: 40px;
+  text-align: center;
+}
+#display1{
+  
+  text-align: center;
+  
+  border: 2px solid black;
+  padding: 10px; 
+  width: 100px;
+  height: 40px;
+  padding-top: 5px;
+  
+}
+#display2{
+  
+  box-sizing: content-box;
+  border: 2px solid black;
+  padding: 10px; 
+  width: 90px;
+  height: 40px;
+  padding-top: 20px;
+  
+}
+
+#dis{
+  margin-bottom: 20px;
+  float: right;
+  margin-right: 0px;
+}
+#steps{
+  border: 2px solid black;
+  padding: 20px; 
+  width: 300px;
+  height: 400px;
+  margin-left: 0px;
+}
+</style>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.5/umd/popper.min.js"></script> -->
+</head>
+<body>
+<div class="container">  
+  <ul class="list-inline">
+    <li><p onclick="dotafunc()" id="game1" class="rcorners2">Dota</p></li>
+    <li><p onclick="pubgfunc()" id="game2" class="rcorners2">Pubg</p></li>
+    <li><p onclick="csfunc()" id="game3" class="rcorners2">CS</p></li>
+    <li><p onclick="todfunc()" id="game4" class="rcorners2">TOD</p ></li>
+  </ul>
+</div>
+ <p style="margin-left: 610px">Display</p>
+<div class="container">
+
+  <ul class="list-inline">
+    <li><div class="container" style="padding-top: 90px" id="steps"></div></li>
+
+    <li>
+      <div id="dis">
+      <ul  class="list-inline dis">
+      <li><p style="padding-left: 20px">Process selected</p></li><li><p id="display1"></p></li><br>
+      <li><p style="padding-left: 20px">Step selected</p><li><p style="padding-left: 30px" id="display2"></p></li></li>
+    </ul></div>
+    </li>
+    
+      
+  </ul>
+</div>
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
